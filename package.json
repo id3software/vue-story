@@ -1,0 +1,49 @@
+{
+  "name": "vue-stories-instagram",
+  "description": "A simple vuejs plugin to view stories like in Instagram",
+  "version": "0.2.1",
+  "private": false,
+  "repository": "https://github.com/stfalcon-studio/vue-stories-instagram",
+  "bugs": "https://github.com/stfalcon-studio/vue-stories-instagram/issues",
+  "main": "dist/vue-stories-instagram.umd.js",
+  "module": "dist/vue-stories-instagram.esm.js",
+  "unpkg": "dist/vue-stories-instagram.min.js",
+  "browser": {
+    "./sfc": "src/components/Stories.vue"
+  },
+  "scripts": {
+    "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/vue-stories-instagram.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/vue-stories-instagram.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/vue-stories-instagram.min.js"
+  },
+  "devDependencies": {
+    "rollup": "^1.17.0",
+    "@rollup/plugin-buble": "^0.21.3",
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "rollup-plugin-vue": "^5.0.1",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10",
+    "sass": "^1.43.4",
+    "sass-loader": "^10.2.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
