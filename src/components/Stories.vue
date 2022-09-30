@@ -354,14 +354,8 @@ export default {
   left: 0;
   background: rgba(16, 16, 16, 0.98);
   font-family: sans-serif;
-
-  // -webkit-touch-callout: none;
-  // -webkit-user-select: none;
-  // -khtml-user-select: none;
-  // -moz-user-select: none;
-  // -ms-user-select: none;
-  // user-select: none;
 }
+
 
 .stories {
   height: 100%;
